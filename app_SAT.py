@@ -24,7 +24,7 @@ st.markdown("""
     </style>
     """, unsafe_allow_html=True)
 
-st.title("📊 Jothi Traders : Patti Report")
+st.title("📊 Sri Ambika Traders : Patti Report")
 
 # --- CONNECTION ---
 SHEET_ID = "1UERRXozE8w5Ve2x7DsWcvTrn_T-NQM_8lpBNqmhwifo"
@@ -542,4 +542,5 @@ except Exception as e:
         st.write("1. **Dependencies**: If running on Streamlit Cloud, ensure `requirements.txt` includes all libraries (e.g. `matplotlib`).")
         st.write("2. **Date Format**: Check if your 'Arrival Date' column in Google Sheets uses the format `DD/MM/YYYY`.")
         st.write("3. **Column Names**: Ensure your Google Sheet headers haven't changed drastically.")
+
 
