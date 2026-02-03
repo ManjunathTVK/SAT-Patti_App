@@ -32,7 +32,8 @@ SHEET_URL = f"https://docs.google.com/spreadsheets/d/{SHEET_ID}/export?format=cs
 
 # --- SECOND SHEET (COMPARISON) ---
 SHEET_ID_2 = "13vmgIulkYS_snELAnSzUwOKkMHOA2r-BBT8ftpyP60o"  # Replace with actual ID
-SHEET_URL_2 = f"https://docs.google.com/spreadsheets/d/{SHEET_ID_2}/export?format=csv"
+GID_2 = "1548525417" # Get this from your browser address bar
+SHEET_URL_2 = f"https://docs.google.com/spreadsheets/d/{SHEET_ID_2}/export?format=csv&gid={GID_2}"
 
 @st.cache_data
 def load_and_clean_data(url):
@@ -542,5 +543,6 @@ except Exception as e:
         st.write("1. **Dependencies**: If running on Streamlit Cloud, ensure `requirements.txt` includes all libraries (e.g. `matplotlib`).")
         st.write("2. **Date Format**: Check if your 'Arrival Date' column in Google Sheets uses the format `DD/MM/YYYY`.")
         st.write("3. **Column Names**: Ensure your Google Sheet headers haven't changed drastically.")
+
 
 
